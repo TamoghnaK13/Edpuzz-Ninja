@@ -1,0 +1,97 @@
+body {
+    --black: #1d3557;
+    --white: #f1faee;
+    --low: #e63946;
+    --mid: #457b9d;
+    --high: #a8dadc;
+    --bar: var(--white);
+    --width: 1px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: var(--black);
+    color: var(--white);
+    margin: auto;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+        Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+}
+
+.clickable {
+    border: 1.5px solid transparent;
+}
+
+.clickable.available:hover {
+    cursor: pointer;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07),
+        0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07),
+        0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+
+    border: var(--width) solid var(--white);
+    border-color: var(--white);
+    /* background-color: red; */
+}
+
+/* a {
+    color: rgb(0,100,200);
+	text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: rgb(0,80,160);
+}
+
+label {
+    display: block;
+} */
+/* 
+input, button, select, textarea {
+    font-family: inherit;
+	font-size: inherit;
+	-webkit-padding: 0.4em 0;
+	padding: 0.4em;
+	margin: 0 0 0.5em 0;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	border-radius: 2px;
+} */
+
+/* input:disabled {
+    color: #ccc;
+} */
+/* 
+button {
+    color: #333;
+	background-color: #f4f4f4;
+	outline: none;
+}
+
+button:disabled {
+    color: #999;
+}
+
+button:not(:disabled):active {
+    background-color: #ddd;
+}
+
+button:focus {
+    border-color: #666;
+} */
+
+*:not(.input) {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+* {
+    /* box-sizing: border-box; */
+    -webkit-tap-highlight-color: transparent;
+}
